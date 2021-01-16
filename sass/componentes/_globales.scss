@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F9FAFC;
+	color: $color-oscuro;
+	@include titulos($Fuente1);
+}
+
+.map{
+    color: $color-primario;
+    font-size: $font-size-image;
+}
