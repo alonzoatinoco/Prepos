@@ -7,13 +7,3 @@ $font-size-image: 40px;
 $Fuente1: 'Lato', sans-serif;
 $Fuente2: 'Oswald', sans-serif;
 
-//mixin para titulos
-@mixin titulos($fuente) {
-	@if $fuente ==$Fuente1 {
-		font-family: $Fuente1;
-	} @else {
-		font-family: $Fuente2;
-		text-transform: uppercase;
-		font-weight: 700;
-	}
-}
