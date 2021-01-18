@@ -12,6 +12,9 @@ body{
 	color: $color-oscuro;
 	@include titulos($Fuente1);
 }
+main{
+    @include max-width(900px);
+}
 
 .map{
     color: $color-primario;
