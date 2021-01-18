@@ -13,7 +13,7 @@ body{
 	@include titulos($Fuente1);
 }
 main{
-    @include max-width(900px);
+    @include max-width(90%);
 }
 
 .map{
