@@ -15,4 +15,9 @@
 	margin-right: auto;
 }
 
-//mixin para imagenes con fondo
+//breakpoints para el responsive
+@mixin respon-to($width){
+	@media only screen and (min-width: $width) {
+		@content
+	}
+}

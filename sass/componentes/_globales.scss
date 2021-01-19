@@ -13,7 +13,11 @@ body{
 	@include titulos($Fuente1);
 }
 main{
+    background-color: greenyellow;
     @include max-width(90%);
+    @include respon-to(900px){
+        background-color: goldenrod;
+    }
 }
 
 .map{
