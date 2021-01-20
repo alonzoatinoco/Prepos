@@ -387,11 +387,28 @@ main {
 
 .nav-principal {
   background-color: #0097a7;
+  height: 3.8rem;
 }
 .nav-principal ul {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav-principal li {
   list-style: none;
-  margin: 0 auto;
+  margin: 0 4%;
+  margin-top: 1rem;
+}
+.nav-principal a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.nav-principal a:hover {
+  background-color: #ffc107;
+  color: #212121;
+  transition: 0.5s;
 }
