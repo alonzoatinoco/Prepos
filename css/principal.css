@@ -384,3 +384,14 @@ main {
 .titulo span {
   font-size: 1.5rem;
 }
+
+.nav-principal {
+  background-color: #0097a7;
+}
+.nav-principal ul {
+  display: flex;
+}
+.nav-principal li {
+  list-style: none;
+  margin: 0 auto;
+}

@@ -1,0 +1,10 @@
+.nav-principal{
+    background-color: $color-secundario;
+    ul{
+        display: flex;
+    }
+    li{
+        list-style: none;
+        margin: 0 auto;
+    }
+}
