@@ -1,21 +1,21 @@
 .nav-principal{
     background-color: $color-secundario;
-    height: 3.8rem;
     ul{
         display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    li{
-        list-style: none;
-        margin: 0 4%;
-        margin-top: 1rem;
+        flex-direction: column;
+        /* align-items: center; */
+        @include respon-to(767px){
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
     }
     a{
+        width: 100%;
+        text-align: center;
         text-decoration: none;
         color: $color-claro;
-        padding: 10px 20px;
-        @include titulos($Fuente2)
+        padding: 1rem;
+        @include titulos($Fuente2);
     }
     a:hover{
         background-color: $color-primario;
