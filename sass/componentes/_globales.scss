@@ -20,8 +20,21 @@ main{
         background-color: goldenrod;
     }
 }
-
-.map{
-    color: $color-primario;
-    font-size: $font-size-image;
+.btn{
+    background-color: $color-secundario;
+    color: $color-claro;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    width: 80%;
+    @include titulos($Fuente2);
+    &:hover{
+        background-color: $color-primario;
+        color: $color-oscuro;
+    }
+    @include respon-to(541px){
+        width: auto;
+    }
 }

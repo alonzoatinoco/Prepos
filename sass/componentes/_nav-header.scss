@@ -15,7 +15,7 @@
         text-decoration: none;
         color: $color-claro;
         padding: 1rem;
-        @include titulos($Fuente2);
+        @include titulos($Fuente1);
     }
     a:hover{
         background-color: $color-primario;
