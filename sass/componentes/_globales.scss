@@ -20,7 +20,7 @@ main{
         background-color: goldenrod;
     }
 }
-.btn{
+%btn{
     background-color: $color-secundario;
     color: $color-claro;
     margin-top: 2rem;
@@ -37,4 +37,8 @@ main{
     @include respon-to(541px){
         width: auto;
     }
+}
+
+.btn{
+    @extend %btn;
 }
