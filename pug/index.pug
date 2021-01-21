@@ -8,16 +8,17 @@ block contenidos
                 p Perú, Lima Metropolitana
             a(href="#" class="btn") Contactar
     main
-        h2 Mis Servicios
-        .caja
-            +caja(subtitulos[0],'fas fa-palette','Lorem ipsum dolor sit, amet')
-            section.caja__contenido
-                h3 #{subtitulos[1]}
-                .caja__images
-                    i(class="fab fa-android")
-                    i(class="fab fa-apple")
-                p Lorem ipsum dolor sit, amet consectetur adipisicing.
-            +caja(subtitulos[2],'far fa-credit-card','Lorem ipsum dolor sit, amet')
+        .servicios
+            h2 Mis Servicios
+            .servicios__caja
+                +caja(subtitulos[0],'fas fa-palette','Lorem ipsum dolor sit, amet')
+                section.caja__contenido
+                    h3 #{subtitulos[1]}
+                    .caja__images
+                        i(class="fab fa-android")
+                        i(class="fab fa-apple")
+                    p Lorem ipsum dolor sit, amet consectetur adipisicing.
+                +caja(subtitulos[2],'far fa-credit-card','Lorem ipsum dolor sit, amet')
     section
         h2 Contacto
         form(action="")

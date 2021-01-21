@@ -17,15 +17,16 @@ h1,h2,h3{
     text-align: center;
 }
 main{
+    background-color:$color-claro;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem;
     border-radius: 1rem;
     @extend %shadow;
-    @include max-width(1200px);
-    @include respon-to(900px){
-        background-color:$color-claro;
+    @include max-width(100%);
+    @include media(tablet){
+        @include max-width(80%);
     }
 }
 .btn{
