@@ -9,17 +9,35 @@ html{
 }
 body{
     font-size: 16px;
-    background-color: #F9FAFC;
+    background-image: linear-gradient(to top, $color-gradient 0%, $color-claro 100%);
 	color: $color-oscuro;
 	@include titulos($Fuente1);
 }
+h1,h2,h3{
+    text-align: center;
+}
 main{
-    background-color: greenyellow;
-    @include max-width(90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    @extend shadow;
+    @include max-width(1200px);
     @include respon-to(900px){
-        background-color: goldenrod;
+        background-color:$color-claro;
     }
 }
+.btn{
+    @extend %btn;
+}
+/*placeholder selector para sombra*/
+%shadow{
+    -webkit-box-shadow: 0px 5px 14px 0px rgba(25,25,25,0.4);
+    -moz-box-shadow: 0px 5px 14px 0px rgba(25,25,25,0.4);
+    box-shadow: 0px 5px 14px 0px rgba(25,25,25,0.4);
+}
+/*placeholder selector para botones*/
 %btn{
     background-color: $color-secundario;
     color: $color-claro;
