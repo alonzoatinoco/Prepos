@@ -4,7 +4,8 @@
 mixin caja(subtitulos,imagen,contenido,)
 	section.caja__contenido
 		h3=subtitulos
-		i(class=imagen)
+		.caja__contenido--images
+			i(class=imagen)
 		p=contenido
 doctype html
 html

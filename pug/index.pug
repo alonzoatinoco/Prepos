@@ -14,26 +14,26 @@ block contenidos
                 +caja(subtitulos[0],'fas fa-palette','Lorem ipsum dolor sit, amet')
                 section.caja__contenido
                     h3 #{subtitulos[1]}
-                    .caja__images
+                    .caja__contenido--images
                         i(class="fab fa-android")
                         i(class="fab fa-apple")
                     p Lorem ipsum dolor sit, amet consectetur adipisicing.
                 +caja(subtitulos[2],'far fa-credit-card','Lorem ipsum dolor sit, amet')
-    section
-        h2 Contacto
-        form(action="")
-            fieldset
-                legend Contactanos llenando los campos
-                div
-                    label(for="nombre") Nombre
-                    input(type="text" placeholder="Tú Nombre" id="nombre")
-                div
-                    label(for="telefono") Telefono
-                    input(type="tel" placeholder="Tú Telefono" id="telefono")
-                div
-                    label(for="correo") Correo
-                    input(type="email" placeholder="Email" id="correo")
-                div
-                    label(for="mensaje") Mensaje
-                    textarea(name="", cols="30", rows="1" id="mensaje")
-                input(type="submit")
+        section
+            h2 Contacto
+            form(action="" class="formulario")
+                fieldset
+                    legend Contactanos llenando los campos
+                    div
+                        label(for="nombre") Nombre
+                        input(type="text" placeholder="Tú Nombre" id="nombre")
+                    div
+                        label(for="telefono") Telefono
+                        input(type="tel" placeholder="Tú Telefono" id="telefono")
+                    div
+                        label(for="correo") Correo
+                        input(type="email" placeholder="Email" id="correo")
+                    div
+                        label(for="mensaje") Mensaje
+                        textarea(name="", cols="30", rows="1" id="mensaje")
+                    input(type="submit")
