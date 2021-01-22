@@ -35,42 +35,46 @@
             <section class="caja__contenido">
               <h3>Diseño Web</h3>
               <div class="caja__contenido--images"><i class="fas fa-palette"></i></div>
-              <p>Lorem ipsum dolor sit, amet</p>
+              <p>Lorem ipsum dolor sit, amet. Lorem ipsum dolor sit, amet. Lorem ipsum dolor sit, amet</p>
             </section>
           <section class="caja__contenido">
             <h3>Aplicaciones Web</h3>
             <div class="caja__contenido--images"><i class="fab fa-android"></i><i class="fab fa-apple"></i></div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing. Lorem ipsum dolor sit, amet Lorem ipsum dolor sit, amet</p>
           </section>
             <section class="caja__contenido">
               <h3>E-comerce</h3>
               <div class="caja__contenido--images"><i class="far fa-credit-card"></i></div>
-              <p>Lorem ipsum dolor sit, amet</p>
+              <p>Lorem ipsum dolor sit, amet Lorem ipsum dolor sit, amet Lorem ipsum dolor sit, amet</p>
             </section>
         </div>
       </div>
-      <section>
+      <section class="contacto">
         <h2>Contacto</h2>
         <form class="formulario" action="">
           <fieldset>
             <legend>Contactanos llenando los campos</legend>
-            <div>
-              <label for="nombre">Nombre</label>
-              <input type="text" placeholder="Tú Nombre" id="nombre">
+            <div class="contenedor">
+              <div class="contenedor__campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Tú Nombre" id="nombre">
+              </div>
+              <div class="contenedor__campo">
+                <label for="telefono">Telefono</label>
+                <input type="tel" placeholder="Tú Telefono" id="telefono">
+              </div>
+              <div class="contenedor__campo">
+                <label for="correo">Correo</label>
+                <input type="email" placeholder="Email" id="correo">
+              </div>
+              <div class="contenedor__campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="" cols="20" rows="1" id="mensaje"></textarea>
+              </div>
+              <div class="contenedor__campo">
+                <input class="btn" type="submit">
+              </div>
             </div>
-            <div>
-              <label for="telefono">Telefono</label>
-              <input type="tel" placeholder="Tú Telefono" id="telefono">
-            </div>
-            <div>
-              <label for="correo">Correo</label>
-              <input type="email" placeholder="Email" id="correo">
-            </div>
-            <div>
-              <label for="mensaje">Mensaje</label>
-              <textarea name="" cols="30" rows="1" id="mensaje"></textarea>
-            </div>
-            <input type="submit">
           </fieldset>
         </form>
       </section>

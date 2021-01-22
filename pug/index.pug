@@ -11,29 +11,31 @@ block contenidos
         .servicios
             h2 Mis Servicios
             .servicios__caja
-                +caja(subtitulos[0],'fas fa-palette','Lorem ipsum dolor sit, amet')
+                +caja(subtitulos[0],'fas fa-palette','Lorem ipsum dolor sit, amet. Lorem ipsum dolor sit, amet. Lorem ipsum dolor sit, amet')
                 section.caja__contenido
                     h3 #{subtitulos[1]}
                     .caja__contenido--images
                         i(class="fab fa-android")
                         i(class="fab fa-apple")
-                    p Lorem ipsum dolor sit, amet consectetur adipisicing.
-                +caja(subtitulos[2],'far fa-credit-card','Lorem ipsum dolor sit, amet')
-        section
+                    p Lorem ipsum dolor sit, amet consectetur adipisicing. Lorem ipsum dolor sit, amet Lorem ipsum dolor sit, amet
+                +caja(subtitulos[2],'far fa-credit-card','Lorem ipsum dolor sit, amet Lorem ipsum dolor sit, amet Lorem ipsum dolor sit, amet')
+        section.contacto
             h2 Contacto
             form(action="" class="formulario")
                 fieldset
                     legend Contactanos llenando los campos
-                    div
-                        label(for="nombre") Nombre
-                        input(type="text" placeholder="Tú Nombre" id="nombre")
-                    div
-                        label(for="telefono") Telefono
-                        input(type="tel" placeholder="Tú Telefono" id="telefono")
-                    div
-                        label(for="correo") Correo
-                        input(type="email" placeholder="Email" id="correo")
-                    div
-                        label(for="mensaje") Mensaje
-                        textarea(name="", cols="30", rows="1" id="mensaje")
-                    input(type="submit")
+                    .contenedor
+                        .contenedor__campo
+                            label(for="nombre") Nombre
+                            input(type="text" placeholder="Tú Nombre" id="nombre")
+                        .contenedor__campo
+                            label(for="telefono") Telefono
+                            input(type="tel" placeholder="Tú Telefono" id="telefono")
+                        .contenedor__campo
+                            label(for="correo") Correo
+                            input(type="email" placeholder="Email" id="correo")
+                        .contenedor__campo
+                            label(for="mensaje") Mensaje
+                            textarea(name="", cols="20", rows="1" id="mensaje")
+                        .contenedor__campo
+                            input(type="submit" class="btn")
