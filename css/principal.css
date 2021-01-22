@@ -381,6 +381,7 @@ main {
 html {
   font-size: 62.5%;
   /* <--- <> 10px*/
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -392,6 +393,11 @@ body {
 
 h1, h2, h3 {
   text-align: center;
+}
+
+.servicios, .nav-principal, .formulario {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 
 main {
