@@ -592,3 +592,8 @@ main {
 .contenedor__campo textarea {
   height: 20rem;
 }
+
+.footer {
+  margin: 1rem;
+  text-align: center;
+}

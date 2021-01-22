@@ -29,6 +29,7 @@ main{
         @include max-width(80%);
     }
 }
+
 .btn{
     @extend %btn;
 }
